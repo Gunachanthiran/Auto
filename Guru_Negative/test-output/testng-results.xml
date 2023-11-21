@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-05T08:24:19Z" name="Default suite" finished-at="2023-11-05T08:24:40Z" duration-ms="21245">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Neg_Runner.Guru_Neg_TestRunner@1fa1cab1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-11-05T08:24:19Z" name="Default test" finished-at="2023-11-05T08:24:40Z" duration-ms="21245">
+      <class name="Neg_Runner.Guru_Neg_TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Neg_Runner.Guru_Neg_TestRunner@1fa1cab1]" started-at="2023-11-05T13:54:19Z" name="setUpClass" finished-at="2023-11-05T13:54:20Z" duration-ms="789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6cd15072]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Neg_Runner.Guru_Neg_TestRunner@1fa1cab1]" started-at="2023-11-05T13:54:20Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-05T13:54:40Z" duration-ms="20367" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["to test login and register functionality with Invalid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Testing Guru99 demo site  #Goal]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	expected [Sign-on: Mercury Tours] but found [Login: Mercury Tours]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	expected [Sign-on: Mercury Tours] but found [Login: Mercury Tours]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at Guru_NegDefinition.Neg_Definition.i_should_see_the_title_as(Neg_Definition.java:64)
+	at ✽.I Should see the Title as "Login: Mercury Tours"(file:///C:/Users/gunac/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/Guru_Negative/src/test/resources/Guru_Neg/guru_negative.feature:34)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Neg_Runner.Guru_Neg_TestRunner@1fa1cab1]" started-at="2023-11-05T13:54:40Z" name="tearDownClass" finished-at="2023-11-05T13:54:40Z" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Neg_Runner.Guru_Neg_TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
